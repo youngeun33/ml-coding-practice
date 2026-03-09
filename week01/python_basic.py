@@ -99,4 +99,6 @@ print(d[3][-1])
 print(d[0:2])
 
 # 리스트 연결
-print(d[0:3])
+print(a+b)
+print(b[0]+"hi~ ^^;")
+#
