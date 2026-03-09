@@ -86,4 +86,8 @@ print(b.split(","))
 
 # 리스트 만들기
 a =[1,2,3]
-b = [""]
+b = ['Life', 'is', 'too', 'short']
+c = [1, 2, 'Life', 'is']
+d = [1, 2, ['Life', 'is']]
+
+# 리스트 인덱싱
