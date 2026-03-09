@@ -48,4 +48,7 @@ print(a[7:-11])
 a = "Python"
 print(a.count("p"))
 
-# ㅁ
+# 문자 위치 확인
+print(a.find('y'))
+print(a.find('p'))
+print
