@@ -299,3 +299,11 @@ for score in [90, 25, 67, 45, 80]:
 i =0
 while i < 5:
     i+=1
+    print('*' * i)
+
+# 함수 정의
+def sum(a, b):
+    x = a +b
+    return x
+
+def sum2
