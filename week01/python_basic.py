@@ -422,7 +422,7 @@ for i in range(1,6):
 f.close()
 
 # 파일에 내용 추가하기
-f = open('example.txt', 'a')
+f = open('example.txt', 'w')
 for i in range(6,11):
     data = "%d번째 줄입니다.\n" % i
     f.write(data)
