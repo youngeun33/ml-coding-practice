@@ -200,5 +200,15 @@ print(dic['name'])
 print(dic.keys())
 print(list(dic.keys()))
 
-for ket in dic.keys():
+for key in dic.keys():
     print(key)
+
+# value의 리스트 만들기
+print(dic.values())
+print(list(dic.values()))
+
+# key, value 쌍 얻기
+print(dic.items())
+
+for key, value in dic.items():
+    
