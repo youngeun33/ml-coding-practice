@@ -402,4 +402,10 @@ import urllib.request
 urllib.request.Request('http://www.sunmoon.ac.kr')
 
 import pandas
-pandas.
+pandas.DataFrame()
+
+from datetime import datetime
+datetime.now() 
+
+# 파일 객체 생성
+f =
