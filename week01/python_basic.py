@@ -117,4 +117,11 @@ a[-1] =['d', 'e', 'f']
 print(a)
 
 # 삭제 
-del a
+del a[-1]
+print(a)
+
+# 원소추가
+a.append(5)
+print(a)
+
+# 원소 정렬
