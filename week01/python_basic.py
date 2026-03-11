@@ -443,3 +443,7 @@ f = open('example.txt', 'r')
 data = f.read()
 f.close()
 data
+
+# with open() as 파일 객체
+with open('example.txt', 'r') as f:
+    f.write
