@@ -337,4 +337,7 @@ print(any(4,-2,0.0,4))
 print(chr(97))
 print(chr(48))
 
-# 객체 x가 가진
+# 객체 x가 가진 멤버 변수와 멤버 함수 보여주기
+print(dir([1,2,3]))
+print(dir({'1':'a'}))
+print(dir(1))
