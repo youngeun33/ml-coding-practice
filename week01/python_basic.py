@@ -349,4 +349,8 @@ print(dir(1))
 print(int('3'))
 print(str(3))
 
-# xㄹ
+# x를 리스트로 반환
+print(list('Python'))
+print(list((1,2,3)))
+
+# x를 튜플로 반환
