@@ -377,4 +377,4 @@ print(min("Python"))
 print(pow(2,4))
 
 # 사용자 입력으로 받은 값을 문자열로 반환1
-c = input("값을 입력해주세여 ")
+c = input("값을 입력해주세요:")
