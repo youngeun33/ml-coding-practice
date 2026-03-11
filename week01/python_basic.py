@@ -111,4 +111,10 @@ a[2] = 99
 print(a)
 
 a[1:2] = ['a', 'b', 'c']
-print
+print(a)   
+
+a[-1] =['d', 'e', 'f']
+print(a)
+
+# 삭제 
+del a
