@@ -381,4 +381,6 @@ c = input("값을 입력해주세요:")
 print(c)
 
 # 입력 받은 숫자에 해당되는 범위의 값을 반환
-print(range)
+print(range(5))
+print(list(range(5)))
+print(list(range(1,10,2=)))
