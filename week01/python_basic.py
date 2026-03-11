@@ -364,4 +364,8 @@ print(type(a))
 # 간단한 삽입형 함수 생성
 sum = lambda a, b: a + b
 
-    
+print(sum(3,5))
+
+# 최대, 최소값 반환 
+print(max([1,4,2,8,6]))
+print(max(""))
