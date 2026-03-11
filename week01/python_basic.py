@@ -437,3 +437,9 @@ while True:
     print(line)
 
 f.close()
+
+# 파일 모드 'r' - read()
+f = open('example.txt', 'r')
+data = f.read()
+f.close()
+data
