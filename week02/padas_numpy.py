@@ -9,3 +9,6 @@ print(sample.tail())
 sample.info()
 sample.describe()   
 
+sample_dic = {
+    
+}
