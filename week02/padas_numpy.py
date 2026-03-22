@@ -120,3 +120,7 @@ data = {
 }
 
 # DataFrame 생성
+df = pd.DataFrame(data)
+print(df.head())
+
+result
