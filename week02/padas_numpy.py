@@ -195,3 +195,6 @@ print(np_a + np_b)
 print(np_a - np_b)
 print(np_a * np_b)
 print(np_a @ np_b)
+
+print(np.random.randtnt(11))
+print(np.random.randint(50,))
