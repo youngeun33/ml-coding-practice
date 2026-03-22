@@ -106,4 +106,4 @@ print(iris.groupby('class').std())
 
 print(iris.drop('class', axis=1).agg(['sum','mean','std']))
 
-# print()
+# print(iris.aff(['sum','mean','std'], axis=))   # class 컬럼으로 인해 에러 발생
