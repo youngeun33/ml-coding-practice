@@ -209,4 +209,6 @@ print(np.linspace(1,100,10))       # 1부터 10까지 균등한 간격의 값을
 A = np.array([4,16,25])
 print(np.sqrt(A))
 
-print()
+print(np.arange(8).reshape(2,4)+10)
+
+# 0부터 8 미만까지 출력하고 (2,)
