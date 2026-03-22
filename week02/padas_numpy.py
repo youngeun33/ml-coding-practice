@@ -46,3 +46,6 @@ print(sample_df.drop(['a','b','c'], axis=0))      # 행을 제거하려면 axis 
 
 netflix = pd.read_csv('2.1.1.netflix.csv')
 print(netflix.head())
+
+print(netflix['release_year'])
+pri
