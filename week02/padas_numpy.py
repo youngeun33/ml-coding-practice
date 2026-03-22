@@ -123,4 +123,5 @@ data = {
 df = pd.DataFrame(data)
 print(df.head())
 
-result
+# 나이가 30 이상인 직워
+result = df[df['age'] >= 30][['name','salary']]
