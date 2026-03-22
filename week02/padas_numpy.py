@@ -76,4 +76,7 @@ df = pd.DataFrame(date)
 print(df.head())
 
 # 필터링 조건 설정
-condition
+condition = (
+    (df['comment_length']>100)&
+    (df['likes']>=)
+)
