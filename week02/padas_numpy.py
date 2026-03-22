@@ -88,4 +88,7 @@ winner_df = df[condition]
 print(winner_df)
 
 print(sample_df.reset_index()) 
-p
+
+print(sample_df.reset_index(drop=True))     # 기존 인덱스는 제거하기
+
+print(sample_df)
