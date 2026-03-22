@@ -123,5 +123,13 @@ data = {
 df = pd.DataFrame(data)
 print(df.head())
 
-# 나이가 30 이상인 직워
+# 나이가 30 이상인 직원의 이름과 급여 반환
 result = df[df['age'] >= 30][['name','salary']]
+print(result)
+
+# 예제 데이터 생성
+data = {
+    'name': ['Alice', 'Bob', 'Charlie', 'David', 'Eve', 'Frank', 'Grace', 'Hannah'],
+    'comment_length': [150, 200, 50, 300, 120, 180, 75, 160],
+    'likes': [25, 30, 10, 45, 20, 35, 5, 28],
+}
