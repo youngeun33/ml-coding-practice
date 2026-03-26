@@ -140,4 +140,7 @@ plt.close()
 titanic = titanic.dropna(subset=['Age','Fare'])
 
 # 상관 행렬 계산
-correlation_ma
+correlation_matrix = titanic.drop('PassengerId',axis=1).corr(numeric_only=True)
+
+# 히트맴 그리기
+plt.matshow(cor)
