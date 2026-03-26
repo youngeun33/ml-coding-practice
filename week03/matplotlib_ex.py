@@ -197,7 +197,7 @@ print(titanic.info())
 plt.boxplot([titanic[titanic['Pclass']==1]['Age'],
              titanic[titanic['Pclass']==2]['Age'],
              titanic[titanic['Pclass']==3]['Age']],
-             labels=['1st Class','2nd Class','3nd Class'])
+             labels=['1st Class','2nd Class','3rd Class'])
 
 plt.title('Box Plot for Age by Pclass')
 plt.xlabel('Pclass')
@@ -226,3 +226,6 @@ plt.ylabel('Age')
 
 # x축의 눈금 설정
 plt.xticks([1,2,3],['1st Class','2nd Class','3rd Class'])
+
+# 범례 설정
+plt.legend()
