@@ -13,4 +13,5 @@ print(titanic.head())
 # 열에 대한 요약 정보 확인
 print(titanic.info())
 
-***### **선 그래프 : 객실 등급에 따른 생존율 표시하기**
+"""### **선 그래프 : 객실 등급에 따른 생존율 표시하기**"""
+pclass_survied_mean = titanic.
