@@ -143,4 +143,7 @@ titanic = titanic.dropna(subset=['Age','Fare'])
 correlation_matrix = titanic.drop('PassengerId',axis=1).corr(numeric_only=True)
 
 # 히트맴 그리기
-plt.matshow(cor)
+plt.matshow(correlation_matrix, cmap='PuRd_r')
+plt.colorbar()
+
+# x축과
