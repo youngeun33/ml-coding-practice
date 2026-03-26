@@ -209,7 +209,8 @@ plt.close()
 
 # 결측치 처리
 titanic['Age'] = titanic['Age'].fillna(titanic['Age'].mean())
-print(titanic.info(*))
+print(titanic.info())
+
 # 바이올린 플롯 그리기
 plt.figure(figsize=(10,6))
 
@@ -219,4 +220,5 @@ violin_plot = plt.violinplot([titanic[titanic['Pclass']==1]['Age'],
                               titanic[titanic['Pclass']==3]['Age']],
                               showmeans=False,showmedians=True)
 
+plt.title('Violin Plot of Age by Pclass')
 plt.
