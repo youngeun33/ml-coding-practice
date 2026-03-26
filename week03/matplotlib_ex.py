@@ -14,4 +14,5 @@ print(titanic.head())
 print(titanic.info())
 
 """### **선 그래프 : 객실 등급에 따른 생존율 표시하기**"""
-pclass_survied_mean = titanic.
+pclass_survied_mean = titanic.groupby('Pclass')['Survied'].mean().reset_index()
+
