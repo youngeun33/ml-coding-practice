@@ -54,4 +54,6 @@ for i, value in enumerate(survived_counts):
     plt.text(i,value+1,str(value),ha='center',va='bottom')
 
 plt.savefig('Figure02.png')
-plt.cl
+plt.close()
+
+"""### **수평 막대 그래프 : 성별에 따른 생존자 수 확인하기**"""
