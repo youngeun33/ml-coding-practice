@@ -11,4 +11,4 @@ titanic = pd.read_csv('3.1.1.tatanic.csv')
 print(titanic.head())
 
 # 열에 대한 요약 정보 확인
-print(tati)
+print(titanic.info())
