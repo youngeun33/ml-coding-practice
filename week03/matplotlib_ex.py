@@ -3,4 +3,6 @@
 import pandas as pd
 
 # 타이타닉 csv 파일 불러오기
-titanic = pd.read.
+titanic = pd.read_csv('3.1.1.tatanic.csv')
+
+# head( ) 함수를 출력하여
