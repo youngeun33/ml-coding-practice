@@ -143,7 +143,7 @@ titanic = titanic.dropna(subset=['Age','Fare'])
 correlation_matrix = titanic.drop('PassengerId',axis=1).corr(numeric_only=True)
 print(correlation_matrix)
 
-# 히트 그리기
+# 히트맵 그리기
 plt.matshow(correlation_matrix, cmap='PuRd_r')
 plt.colorbar()
 
@@ -170,3 +170,5 @@ print(survived_counts)
 # 영역 채우기 그래프 그리기
 plt.figure(figsize=(10,6))
 
+# 나이대별 사망자
+plt.fill
