@@ -36,4 +36,4 @@ plt.close()                         # 다음 Plot을 새로 그리기 위해 plt
 """### **수직 막대 그래프 : 각 승선 항구에 따른 생존자 수 확인하기**"""
 
 # 승선 항구에 따른 생존자의 수 계산
-survived_conts = titanic[titanic[]]
+survived_conts = titanic[titanic['Survived']==1[['Embarked'].]
