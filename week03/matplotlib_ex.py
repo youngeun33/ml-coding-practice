@@ -20,6 +20,6 @@ pclass_survied_mean = titanic.groupby('Pclass')['Survived'].mean().reset_index()
 pclass_survied_mean
 
 # 맷플롯립 라이브러리 불러오기
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 #
