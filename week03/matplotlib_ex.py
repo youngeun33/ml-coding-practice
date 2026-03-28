@@ -271,3 +271,5 @@ plt.subplot(2,2,4)
 plt.plot([10,11,12])
 plt.savefig('Figure12.png')
 plt.close()
+
+## **타이타닉 데이터셋으로 개별 서브플롯 
