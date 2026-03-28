@@ -308,4 +308,7 @@ plt.tick_params(axis='y',labelcolor='deeppink')
 plt.legend(loc='upper right')
 
 # 제목 설정
-plt.suptitle('Survuval Analysis by Number of Parents/Chil')
+plt.suptitle('Survuval Analysis by Number of Parents/Chileren (Parch) on the Titanic')
+plt.tight_layout()
+plt.savefig('Figure13.png')
+plt.close()
