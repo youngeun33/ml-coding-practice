@@ -308,4 +308,4 @@ plt.tick_params(axis='y',labelcolor='deeppink')
 plt.legend(loc='upper right')
 
 # 제목 설정
-0
+plt.suptitle('Survuval Analysis by Number of Parents/Chil')
