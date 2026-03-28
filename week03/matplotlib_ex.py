@@ -253,4 +253,8 @@ plt.title('Error Bar Plot of Fare by Parch')
 plt.xlabel('Parch')
 plt.ylabel('Fare')
 plt.xticks(fare_means.index)
-plt.
+plt.legend()
+plt.savefig('Figure11.png')
+plt.close()
+
+## **개별 서브플롯을 하나씩 생성하기**
