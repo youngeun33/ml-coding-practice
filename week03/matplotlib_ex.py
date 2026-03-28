@@ -349,4 +349,9 @@ axes[0].set_ylabel('Not Survived Count',color='indigo')
 axes[0].tick_params(axis='y',labelcolor='indigo')
 axes[0].legend(loc='upper right')
 
-# 두 번째 서브플롯
+# 두 번째 서브플롯 설정(막대 그래프)
+axes[0].bar(x,y2q,'-o',color='indigo',linewidt=3,alpha=0.7,label='Survived')
+axes[0].set_xlabel('Parch')
+axes[0].set_ylabel('Not Survived Count',color='indigo')
+axes[0].tick_params(axis='y',labelcolor='indigo')
+axes[0].legend(loc='upper right')
