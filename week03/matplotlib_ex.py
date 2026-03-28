@@ -278,4 +278,8 @@ plt.close()
 titanic = pd.read_csv('3.1.1.titanic')
 
 # 각 부모와 자녀의 수에 따른 생존자와 사망자 수 게산
-parch_counts = titanic.groupby('Parch')['Survived'].value_counts().unstack().
+parch_counts = titanic.groupby('Parch')['Survived'].value_counts().unstack().fillna(0)
+print(parch_counts)
+
+# x, y 설정
+x = parch_counts.index.astype(st) 
