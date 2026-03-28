@@ -301,4 +301,5 @@ plt.legend(loc='upper right')
 
 # 두 번 째 서브플롯 설정 (막대 그래프)
 plt.subplot(2,1,2)
-plt.bar()
+plt.bar(x, y2, color ='deeppin',alpha=0.7,width=0.5,label='Survived')
+plt.xlae
