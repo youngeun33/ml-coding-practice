@@ -275,7 +275,7 @@ plt.close()
 ## **타이타닉 데이터셋으로 개별 서브플롯 하나씩 그리기**
 
 # Survived가 0이면 사망자를, 1이면 생존자를 나타냄
-titanic = pd.read_csv('3.1.1.titanic')
+titanic = pd.read_csv('3.1.1.titanic.csv')
 
 # 각 부모와 자녀의 수에 따른 생존자와 사망자 수 게산
 parch_counts = titanic.groupby('Parch')['Survived'].value_counts().unstack().fillna(0)
@@ -292,7 +292,7 @@ plt.figure(figsize=(10,10))
 # 첫 번째 서브플롯 설정 (선그래프)
 plt.subplot(2,1,1)
 # 선 그래프 그리기
-plt.plto(x, y1, '-o', color = 'indigo',markersize=7,linewidth=3,alpha=0.7,
+plt.plot(x, y1, '-o', color = 'indigo',markersize=7,linewidth=3,alpha=0.7,
          label='Not Survived')
 plt.xlabel('Parch')
 plt.ylabel('Not Survived Count',color='indigo')
@@ -301,7 +301,7 @@ plt.legend(loc='upper right')
 
 # 두 번 째 서브플롯 설정 (막대 그래프)
 plt.subplot(2,1,2)
-plt.bar(x, y2, color ='deeppin',alpha=0.7,width=0.5,label='Survived')
+plt.bar(x, y2, color ='deeppink',alpha=0.7,width=0.5,label='Survived')
 plt.xlabel('Parch')
 plt.ylabel('Survived Count',color='deeppink')
 plt.tick_params(axis='y',labelcolor='deeppink')
