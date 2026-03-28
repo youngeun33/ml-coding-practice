@@ -240,6 +240,7 @@ fare_means = titanic.groupby('Parch')['Fare'].mean()  # 평균
 print(fare_means,'\n')
 
 fare_std = titanic.groupby('Parch')['Fare'].std()   # 표준 편차
+print(fare_std,'\n')
 
 """* 에러바는 데이터의 표준 편차를 나타내는 경우에는 길이가 길수록 해당 그룹의 데이터가 퍼져 있음을 의미"""
 
@@ -329,4 +330,5 @@ plt.close()
 
 ## **타이타닉 데이터셋으로 개별 서브플롯 동시에 그리기**
 
-# 각 부모와 자녀의 수에 따른 생존
+# 각 부모와 자녀의 수에 따른 생존자와 사망자 수 계산
+parch_
