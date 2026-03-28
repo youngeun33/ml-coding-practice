@@ -230,4 +230,7 @@ plt.xticks([1,2,3],['1st Class','2nd Class','3rd Class'])
 # 범례 설정
 plt.legend(violin_plot['bodies'],['1st Class'],['2nd Class'],['3rd Class'],
            title = 'Pclass',loc="upper right")
-plt.savefig('')
+plt.savefig('Figure10.png')
+plt.close()
+
+## **에러 바 : 요금의 평균과 표준편차 표현하기**
