@@ -78,6 +78,7 @@ plt.savefig('./week04/Seaborn_Figure05.jpg')
 
 # **관계 그래프**
 # pairplot( ) 그리기
-sns.pairplot(data=tips, hue='ses',diag_kind='his', palette='hus1')
+sns.pairplot(data=tips, hue='sex',diag_kind='his', palette='hus1')
 
-plt.suptitle('Pair Plot of Tips Dataset', fontsize=16)
+plt.suptitle('Pair Plot of Tips Dataset', y=1.05)
+plt.savefig('./week04/Seaborn_Figure06.jpg')
