@@ -59,4 +59,8 @@ housing_tr.loc[null_rows_idx].head()
 from sklearn.ensemble import IsolationForest
 
 isolation_forest = IsolationForest(random_state=42)
-outlier_pred = 
+outlier_pred = isolation_forest.fit_predict(X)
+
+outlier_pred
+
+housing = housing.iloc[outlier_pred]
