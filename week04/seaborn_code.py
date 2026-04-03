@@ -53,4 +53,5 @@ fig = plt.figure(figsize=(15,5))
 ax1 = fig.add_subplot(1,2,1)
 ax2 = fig.add_subplot(1,2,2)
 
-# 산점도에 선형 회귀선 표시(fit)
+# 산점도에 선형 회귀선 표시(fit_reg = True)
+sns.regplot(x='total_bill',y='tip',data=tips,color='blue',scatter_kws={'s':50,'alpha':0.5},line_kws={'linestyle':'--'},ax=ax1)
