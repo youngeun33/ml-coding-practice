@@ -9,4 +9,9 @@ print(tips.head())
 
 tips.info()
 
-# **범주형 
+# **범주형 변수 산점도 그래프**
+
+import matplotlib.pyplot as plt
+
+# figure에 2개의 서브 플롯을 생성
+fig = plt.figure(fi)
