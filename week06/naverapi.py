@@ -44,3 +44,10 @@ def getNaverSearch(node, srcText, page_start, display):
     responseDecode = getNaverSearch(url)              #[CODE 1]
 
     if (responseDecode == None):
+        return None
+    else:
+        return json.loads(responseDecode)
+    
+
+def getRequestUrl(url):
+    req = urllin.
