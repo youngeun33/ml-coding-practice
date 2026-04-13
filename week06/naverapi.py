@@ -50,4 +50,7 @@ def getNaverSearch(node, srcText, page_start, display):
     
 
 def getRequestUrl(url):
-    req = urllin.
+    req = urllib.request.Request(url)
+
+    req.add_header("X-naver-Client_Id", client_id)
+    req.add_header("X-naver-Client-Secret", client_secret)
