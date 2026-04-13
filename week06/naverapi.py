@@ -9,4 +9,10 @@ client_secret = 'Client_Secret'
 def main():
 
     node = 'news'
-    srcText =
+    srcText = input('검색어를 입력하세요: ')        # 크롤링할 대상
+
+    cnt = 0
+    jsonResult = []
+
+    jsonResponse = getNaverSearch(node, srcText, 1, 100)      # [CODE 2]
+    
