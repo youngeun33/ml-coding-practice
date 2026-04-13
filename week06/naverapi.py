@@ -4,4 +4,9 @@ import datetime
 import json
 
 client_id = 'Client_ID'
-client_se
+client_secret = 'Client_Secret'
+
+def main():
+
+    node = 'news'
+    srcText =
