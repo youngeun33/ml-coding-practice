@@ -1,2 +1,7 @@
 # -*- coding: utf-8 -*-
-impot
+import urllib.request
+import datetime
+import json
+
+client_id = 'Client_ID'
+client_se
