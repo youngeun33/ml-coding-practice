@@ -75,4 +75,11 @@ def getPostData(post, jsonResult, cnt):  # [CODE 3]
     # %d: 일 (예, 01, 02, 03, ...)
     # %b: 짧은 형식의 월 이름 (예, 'Jan', 'Feb', 'Mar', ... )
     pDate = datetime.datetime.strptime(post['pubDate'], '%a, %d %b %Y %H:%M:%S +0900')
-    PDate = pDate.ster
+    PDate = pDate.strftime('%Y-%m-%d %H:%M:%S')
+
+    jsonResult.appen({
+        'cnt': cnt,
+        'title': title,
+        'description': description,
+        'org_link': org_link,
+    })
