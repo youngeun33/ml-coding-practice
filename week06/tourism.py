@@ -18,23 +18,23 @@ def main():
   nEndYear = int(input('데이터를 몇 년까지 수집할까요? : '))
   ed_cd = "E" 		                      # E : 방한외래관광객, D : 해외 출국
 
-  jsonResult, result, natName, dataEND = getTourismStatsService(NAT_CD, ED_CD, nStartYear, nEndYear)  #[CODE 3]
+  jsonResult, result, natName, dataEND = getTourismStatsService(nat_cd, ed_cd, nStartYear, nEndYear)  #[CODE 3]
 
   #파일저장 : csv 파일
   columns = ["입국자국가", "국가코드", "입국연월", "입국자 수"]
   result_df = pd.DataFrame(result, columns = columns)
-  result_df.to_csv('./%s_%s_%d_%s.csv' % (natName, ED_CD, nStartYear, dataEND), index = False, encoding = 'cp949')
+  result_df.to_csv('./%s_%s_%d_%s.csv' % (natName, ed_cd, nStartYear, dataEND), index = False, encoding = 'cp949')
 
 """### [CODE 3]"""
 
-def getTourismStatsService(NAT_CD, ED_CD, nStartYear, nEndYear):
+def getTourismStatsService(nat_cd, ed_cd, nStartYear, nEndYear):
   jsonResult = []
   result = []
 
   for year in range(nStartYear, nEndYear+1):
     for month in range(1, 13):
       yyyymm = "{0}{1:0>2}".format(str(year), str(month))
-      jsonData = getTourismStatsItem(yyyymm, NAT_CD, ed_cd)     #[CODE 2]
+      jsonData = getTourismStatsItem(yyyymm, nat_cd, ed_cd)     #[CODE 2]
       if (jsonData['response']['header']['resultMsg'] == 'OK'):
         #데이터가 없는 마지막 항목인 경우 ----------------------------
         if jsonData['response']['body']['items'] == '':
@@ -50,8 +50,8 @@ def getTourismStatsService(NAT_CD, ED_CD, nStartYear, nEndYear):
         ed = jsonData['response']['body']['items']['item']['ed']
         print('[ %s_%s : %s ]' % (natName, yyyymm, num))
         print('------------------------------------------------------')
-        jsonResult.append({'nat_name': natName, 'nat_cd': NAT_CD, 'yyyymm': yyyymm, 'visit_cnt': num})
-        result.append([natName, NAT_CD, yyyymm, num])
+        jsonResult.append({'nat_name': natName, 'nat_cd': nat_cd, 'yyyymm': yyyymm, 'visit_cnt': num})
+        result.append([natName, nat_cd, yyyymm, num])
 
   return (jsonResult, result, natName, ed)
 
