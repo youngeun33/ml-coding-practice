@@ -27,7 +27,7 @@ def main():
 
 """### [CODE 3]"""
 
-def getTourismStatsService(nat_cd, ed_cd, nStartYear, nEndYear):
+def getTourismStatsService(NAT_CD, ed_cd, nStartYear, nEndYear):
   jsonResult = []
   result = []
 
@@ -51,7 +51,7 @@ def getTourismStatsService(nat_cd, ed_cd, nStartYear, nEndYear):
         print('[ %s_%s : %s ]' % (natName, yyyymm, num))
         print('------------------------------------------------------')
         jsonResult.append({'nat_name': natName, 'nat_cd': nat_cd, 'yyyymm': yyyymm, 'visit_cnt': num})
-        result.append([natName, nat_cd, yyyymm, num])
+        result.append([natName, NAT_CD, yyyymm, num])
 
   return (jsonResult, result, natName, ed)
 
