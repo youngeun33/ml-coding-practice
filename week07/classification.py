@@ -34,3 +34,9 @@ plt.show()
 
 # train/test 데이터셋 나누기
 X_train, X_test, y_train, y_test = X[:60000], X[60000:], y[:60000], y[60000:]
+
+# 이진 분류기 훈련
+y_train_5 = (y_train == '5')  # 5는 True고, 다른 숫자는 모두 False
+y_test_5 = (y_test == '5')
+
+from sklearn
