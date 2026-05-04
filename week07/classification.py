@@ -23,3 +23,5 @@ plot_digit(some_digit)
 plt.show() 
 
 print(y[0])        # 샘플 데이터 레이블 확인 (=5)
+
+# 10x10 rmfal to
