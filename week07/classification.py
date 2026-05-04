@@ -91,7 +91,7 @@ y_scores = cross_val_predict(sgd_clf, X_train, y_train_5,cv=3,
 roc_auc_score(y_train_5, y_scores)
 
 #다음은 실행하는데 몇 분이 걸릴 수 있음
-from sklearn.metrics import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier
 
 forest_clf = RandomForestClassifier(random_state=42)
 
